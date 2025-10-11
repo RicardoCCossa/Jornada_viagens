@@ -1,0 +1,46 @@
+header {
+    background-color: var(--background-tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 37px 24px;
+    position: relative;
+}
+
+.logo img {
+    width: 68px;
+    height: 64px;
+}
+
+.menu {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ .menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(19, 18, 18);
+    width: 100%;
+}
+
+/* Links em linha quando menu estiver aberto */
+input[type="checkbox"]:checked ~ .menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a {
+    color: var(--text-secondary-color);
+    text-decoration: none;
+}
+
+.menu-humburguer {
+    cursor: pointer;
+}
