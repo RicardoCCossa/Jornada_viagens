@@ -7,9 +7,13 @@ header {
     position: relative;
 }
 
-.logo img {
+.Logo_mobile {
     width: 68px;
     height: 64px;
+}
+
+.Logo_desktop {
+    display: none;
 }
 
 .menu {
@@ -39,8 +43,55 @@ input[type="checkbox"]:checked ~ .menu ul {
 .menu a {
     color: var(--text-secondary-color);
     text-decoration: none;
+    font-weight: var(--menu-text-weight);
 }
 
 .menu-humburguer {
     cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .menu-humburguer label {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu ul {
+        display: flex;
+        gap: 40px;
+    }
+
+    .menu a {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        padding: 37px 120px;
+    }
+
+    .Logo_mobile {
+        display: none;
+    }
+
+    .Logo_desktop {
+        display: block;
+        width: 260px;
+        height: 64px;
+    }
+
+    .menu a:hover {
+        color: var(--primary-color);
+        text-decoration: underline;
+    }
+}
+
+@media screen and (min-width: 1990px) {
+    header {
+        padding: 37px 165px;
+    }
 }
