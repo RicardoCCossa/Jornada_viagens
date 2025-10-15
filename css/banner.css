@@ -7,10 +7,40 @@
     background-position: center;
 }
 
+.banner-titulo {
+    font-family: var(--title-weight);
+    text-align: center;
+    padding-top: 40px;
+}
+
+.banner_titulo-border {
+    border-bottom: 4px solid var(--secondary-color);
+    width: 180px;
+    margin: auto;
+    margin-top: 16px;
+}
+
+.banner_titulo-paragrafo {
+    text-align: justify;
+    padding: 40px 24px;
+    font-weight: var(--text-weigh);
+    font-size: 20px;
+    line-height: 1.5;
+}
 @media screen and (min-width: 768px) {
     .banner-img {
         background-image: url('../img/banner-tablet.png');
         height: 620px;
+    }
+
+    .banner-titulo {
+        padding-top: 0;
+    }
+
+    .banner_titulo-paragrafo {
+        padding: 40px 60px;
+        line-height: 2;
+        font-size: 24px;
     }
 }
 
@@ -19,5 +49,13 @@
         background-image: url('../img/banner-desktop.png');
         height: 620px;
         width: 100%;
+    }
+
+    .banner_titulo-paragrafo {
+        padding: 40px 120px;
+    }
+
+    .banner-titulo {
+        padding-top: 40px;
     }
 }
