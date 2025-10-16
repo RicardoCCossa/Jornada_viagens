@@ -35,3 +35,15 @@ button {
 body {
     font-family: var(--font-principal);
 }
+
+.banner-titulo {
+    font-family: var(--title-weight);
+    text-align: center;
+    padding-top: 40px;
+}
+
+.banner_titulo-border {
+    border-bottom: 4px solid var(--secondary-color);
+    width: 180px;
+    margin: 16px auto 32px ;
+}
