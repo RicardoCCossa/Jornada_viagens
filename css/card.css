@@ -1,0 +1,29 @@
+.card {
+    background-color: black;
+    color: var(--text-secondary-color);
+    width: 312px;
+    height: 288px;
+    border-radius: 16px;
+    padding: 24px 16px;
+    text-align: center;
+}
+
+.card__category {
+    font-size: 20px;
+    font-weight: var(--text-weight);
+}
+
+.card__body {
+    font-weight: var(--title-weight);
+}
+
+.card__title {
+    font-size: 40px;
+    margin: 0;
+}
+
+.card__price {
+    font-size: 32px;
+    margin-top: 24px 0;
+    display: inline-block;
+}

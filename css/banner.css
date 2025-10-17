@@ -7,6 +7,10 @@
     background-position: center;
 }
 
+.banner h1 {
+    padding-top: 40px;
+}
+
 .banner_titulo-paragrafo {
     text-align: justify;
     padding: 40px 24px;
@@ -14,6 +18,7 @@
     font-size: 20px;
     line-height: 1.5;
 }
+
 @media screen and (min-width: 768px) {
     .banner-img {
         background-image: url('../img/banner-tablet.png');

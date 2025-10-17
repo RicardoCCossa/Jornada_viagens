@@ -1,4 +1,4 @@
-header {
+.cabecalho {
     background-color: var(--background-tertiary-color);
     display: flex;
     justify-content: space-between;
@@ -20,7 +20,7 @@ header {
     display: none;
 }
 
-input[type="checkbox"]:checked ~ .menu {
+input[type="checkbox"]:checked~.menu {
     display: block;
     position: absolute;
     top: 100%;
@@ -30,13 +30,13 @@ input[type="checkbox"]:checked ~ .menu {
 }
 
 /* Links em linha quando menu estiver aberto */
-input[type="checkbox"]:checked ~ .menu ul {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
+input[type="checkbox"]:checked~.menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 }
 
-.menu li{
+.menu li {
     list-style: none;
 }
 
@@ -70,7 +70,7 @@ input[type="checkbox"]:checked ~ .menu ul {
 }
 
 @media screen and (min-width: 1024px) {
-    header {
+    .cabecalho {
         padding: 37px 120px;
     }
 
@@ -91,7 +91,7 @@ input[type="checkbox"]:checked ~ .menu ul {
 }
 
 @media screen and (min-width: 1990px) {
-    header {
+    .cabecalho {
         padding: 37px 165px;
     }
 }
