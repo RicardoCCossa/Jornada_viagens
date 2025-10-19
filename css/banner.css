@@ -13,7 +13,7 @@
 
 .banner_titulo-paragrafo {
     text-align: justify;
-    padding: 40px 24px;
+    padding: 40px 24px 0px;
     font-weight: var(--text-weigh);
     font-size: 20px;
     line-height: 1.5;
@@ -31,7 +31,7 @@
     }
 
     .banner_titulo-paragrafo {
-        padding: 40px 60px;
+        padding: 40px 60px 0px;
         line-height: 2;
         font-size: 32px;
     }
@@ -45,8 +45,9 @@
     }
 
     .banner_titulo-paragrafo {
-        padding: 40px 120px;
+        padding: 40px 120px 0px;
         font-size: 32px;
+        
     }
 
     .banner-titulo {

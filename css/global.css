@@ -16,6 +16,7 @@
 }
 
 /* CSS RESET */
+
 body,
 img,
 h1,
@@ -46,4 +47,17 @@ body {
     border-bottom: 4px solid var(--secondary-color);
     width: 180px;
     margin: 16px auto 32px ;
+}
+
+.button {
+    width: 280px;
+    height: 64px;
+    background-color: var(--secondary-color);
+    font-size: 20px;
+    font-weight: var(--title-weight);
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text-secondary-color);
+    border-radius: 8px;
+    line-height: 64px;
 }
