@@ -1,0 +1,33 @@
+.destino__populares--card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.destino__populares {
+    padding: 24px;
+}
+
+
+.destino__populares--titulo {
+    font-size: 28px;
+    font-weight: var(--title-weight);
+    color: var(--text-primary-color);
+    margin: 24px 0;
+}
+
+.destino__populares--paragrafo {
+    font-size: 20px;
+    font-weight: var(--text-weight);
+    line-height: 32px;
+    color: var(--text-primary-color);
+    text-align: justify;
+}
+
+.destino__populares--button {
+    text-align: center;
+}
+
+.tokyo-tablet, .tokyo-desktop {
+    display: none;
+}

@@ -1,0 +1,124 @@
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.card {
+    background-color: black;
+    color: var(--text-secondary-color);
+    width: 312px;
+    height: 288px;
+    border-radius: 16px;
+    padding: 24px 16px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.card__category {
+    font-size: 20px;
+    font-weight: var(--text-weight);
+}
+
+.card__body {
+    font-weight: var(--title-weight);
+}
+
+.card__title {
+    font-size: 40px;
+    margin: 8px 0 0;
+}
+
+.card__price {
+    font-size: 32px;
+    margin-top: 24px;
+    display: inline-block;
+    margin-bottom: 24px;
+}
+
+.image-japao {
+    background-image: url("../img/japao.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-paraiba {
+    background-image: url("../img/paraiba.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-maputo {
+    background-image: url("../img/maputo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-gaza {
+    background-image: url("../img/gaza.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card_categoria {
+    background-color: var(--background-secondary-color);
+    width: 312px;
+    height: 220px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.card__categoria--imagem {
+    width: 80px;
+    height: 80px;
+    margin: 41px 116px 24px 116px;
+    font-size: 80px;
+    font-weight: var(--text-weight);
+}
+
+.card__categoria--Titulo {
+    font-weight: var(--title-weight);
+    font-size: 28px;
+    color: var(--text-primary-color);
+    margin: 0 16px 41px 16px;
+    text-align: center;
+}
+
+.card__categoria--link {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .card {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .card {
+        width: 588px;
+        height: 308px;
+        padding: 24px 32px;
+    }
+
+    .card__title {
+        font-size: 48px;
+    }
+
+    .card__price {
+        font-size: 40px;
+    }
+
+    .button:hover {
+        background-color: var(--primary-color);
+    }
+
+}

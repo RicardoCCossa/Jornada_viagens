@@ -1,0 +1,56 @@
+.banner-img {
+    background-image: url("../img/banner-mobile.png");
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner h1 {
+    padding-top: 40px;
+}
+
+.banner_titulo-paragrafo {
+    text-align: justify;
+    padding: 40px 24px 0px;
+    font-weight: var(--text-weigh);
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+    .banner-img {
+        background-image: url('../img/banner-tablet.png');
+        height: 620px;
+    }
+
+    .banner-titulo {
+        padding-top: 0;
+        font-size: 27px;
+    }
+
+    .banner_titulo-paragrafo {
+        padding: 40px 60px 0px;
+        line-height: 2;
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .banner-img {
+        background-image: url('../img/banner-desktop.png');
+        height: 620px;
+        width: 100%;
+    }
+
+    .banner_titulo-paragrafo {
+        padding: 40px 120px 0px;
+        font-size: 32px;
+        
+    }
+
+    .banner-titulo {
+        padding-top: 40px;
+    }
+}
