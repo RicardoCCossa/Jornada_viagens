@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 24px;
 }
 
 .card {
@@ -13,7 +14,6 @@
     padding: 24px 16px;
     text-align: center;
     box-sizing: border-box;
-    margin: 0px 0px 24px 0px;
 }
 
 .card__category {
@@ -36,6 +36,7 @@
     display: inline-block;
     margin-bottom: 24px;
 }
+
 .image-japao {
     background-image: url("../img/japao.jpg");
     background-repeat: no-repeat;
@@ -46,6 +47,46 @@
     background-image: url("../img/paraiba.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.image-maputo {
+    background-image: url("../img/maputo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-gaza {
+    background-image: url("../img/gaza.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card_categoria {
+    background-color: var(--background-secondary-color);
+    width: 312px;
+    height: 220px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.card__categoria--imagem {
+    width: 80px;
+    height: 80px;
+    margin: 41px 116px 24px 116px;
+    font-size: 80px;
+    font-weight: var(--text-weight);
+}
+
+.card__categoria--Titulo {
+    font-weight: var(--title-weight);
+    font-size: 28px;
+    color: var(--text-primary-color);
+    margin: 0 16px 41px 16px;
+    text-align: center;
+}
+
+.card__categoria--link {
+    text-decoration: none;
 }
 
 @media screen and (min-width: 768px) {
