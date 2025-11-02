@@ -1,8 +1,22 @@
 .destino__populares--card {
     display: flex;
     flex-direction: column;
-    gap: 24px;
 }
+
+.tokyo-desktop,
+.tokyo-mobile,
+.tokyo-tablet {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.tokyo-mobile {
+    display: block;
+    height: 360px;
+
+}
+
 
 .destino__populares {
     padding: 24px;
@@ -26,8 +40,65 @@
 
 .destino__populares--button {
     text-align: center;
+    margin: 24px 0;
 }
 
-.tokyo-tablet, .tokyo-desktop {
+.tokyo-tablet,
+.tokyo-desktop {
     display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    .tokyo-mobile,
+    .tokyo-desktop {
+        display: none;
+
+    }
+
+    .tokyo-tablet {
+        display: block;
+        height: 452px;
+        object-fit: cover;
+    }
+
+    .destino__populares {
+        padding: 32px 60px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .tokyo-mobile,
+    .tokyo-tablet {
+        display: none;
+    }
+
+    .tokyo-desktop {
+        display: block;
+        width: 588px;
+        height: 452px;
+
+    }
+
+    /* Container dos cards */
+    .destaque__card {
+        display: flex;
+        flex-wrap: nowrap; /* mantém lado a lado */
+        justify-content: center; /* centraliza no meio da tela */
+        align-items: flex-start; /* alinha pelo topo */
+        gap: 24px; /* espaçamento entre os cards */
+    }
+
+    /* Cada card com tamanho fixo e alinhado */
+    .destino__populares--card {
+        overflow: hidden;
+    }
+
+    .destino__populares {
+        padding: 64px 120px;
+    }
+
+    .destino__populares--paragrafo {
+        width: 100%;
+    }
 }
